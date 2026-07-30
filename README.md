@@ -58,3 +58,159 @@ Some common challenges include:
 - Improve decision making using dashboards
 
 ---
+## 🔄 Current Manufacturing Workflow
+
+The following diagram represents a typical manufacturing workflow observed in small and medium-scale manufacturing industries.
+
+```mermaid
+flowchart TD
+
+A[Supplier] --> B[Raw Material Received]
+
+B --> C[Inventory Verification]
+
+C --> D[Production Planning]
+
+D --> E[Machine Allocation]
+
+E --> F[Production Process]
+
+F --> G[Quality Inspection]
+
+G --> H{Quality Passed?}
+
+H -->|Yes| I[Packaging]
+
+H -->|No| J[Rework / Scrap]
+
+I --> K[Finished Goods Inventory]
+
+K --> L[Dispatch]
+
+L --> M[Customer]
+```
+
+---
+
+## 💡 Proposed Software Solution
+
+The proposed Manufacturing Management System centralizes different business operations into a single platform.
+
+Instead of maintaining separate Excel sheets and paper records, every department interacts with one integrated system.
+
+The software is divided into multiple independent modules, making it scalable and easier to maintain.
+
+---
+
+## 📦 Proposed Modules
+
+### 📊 Dashboard
+
+Provides a quick overview of manufacturing activities.
+
+Features:
+
+- Daily Production Summary
+- Machine Utilization
+- Employee Attendance
+- Inventory Alerts
+- Pending Maintenance
+- Recent Activities
+
+---
+
+### 🏭 Production Management
+
+Responsible for handling daily production activities.
+
+Features:
+
+- Create Production Batch
+- Assign Machine
+- Assign Operator
+- Track Production Status
+- Close Production Batch
+- View Production History
+
+---
+
+### 📦 Inventory Management
+
+Maintains stock details for raw materials and finished products.
+
+Features:
+
+- Add New Items
+- Update Stock
+- Low Stock Alerts
+- Supplier Information
+- Stock Movement History
+
+---
+
+### 🔧 Maintenance Management
+
+Helps track machine servicing and breakdown history.
+
+Features:
+
+- Preventive Maintenance Schedule
+- Breakdown Reporting
+- Maintenance History
+- Machine Availability
+- Service Log
+
+---
+
+### 👨‍💼 Employee Management
+
+Stores employee information and manages attendance.
+
+Features:
+
+- Employee Records
+- Shift Allocation
+- Attendance
+- Department Information
+
+---
+
+### 📑 Reports
+
+Generates business reports automatically.
+
+Reports include:
+
+- Daily Production Report
+- Monthly Production Report
+- Inventory Report
+- Machine Downtime Report
+- Employee Attendance Report
+
+---
+
+## 👥 Stakeholders
+
+The following users interact with the proposed system.
+
+| User | Responsibilities |
+|------|------------------|
+| Plant Manager | Monitor production and reports |
+| Production Supervisor | Manage production batches |
+| Machine Operator | Update production status |
+| Store Manager | Manage inventory |
+| Maintenance Engineer | Handle machine servicing |
+| HR | Employee records and attendance |
+| Management | Business insights and analytics |
+
+---
+
+## ✅ Expected Benefits
+
+- Centralized business data
+- Reduced paperwork
+- Faster report generation
+- Better inventory tracking
+- Improved maintenance planning
+- Better communication between departments
+- Increased operational efficiency
