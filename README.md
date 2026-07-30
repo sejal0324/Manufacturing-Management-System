@@ -11,7 +11,7 @@
 
 ---
 
-## 📖 Overview
+## Overview
 
 This repository presents a software engineering case study for a Manufacturing Management System designed for small and medium-sized manufacturing industries.
 
@@ -92,7 +92,7 @@ L --> M[Customer]
 
 ---
 
-## 💡 Proposed Software Solution
+##  Proposed Software Solution
 
 The proposed Manufacturing Management System centralizes different business operations into a single platform.
 
@@ -148,7 +148,7 @@ Features:
 
 ---
 
-### 🔧 Maintenance Management
+### Maintenance Management
 
 Helps track machine servicing and breakdown history.
 
