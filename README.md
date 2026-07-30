@@ -1,4 +1,4 @@
-# 🏭 Manufacturing Management System
+# Manufacturing Management System
 
 > **Business Case Study | Software Design | System Architecture | Database Design**
 
@@ -21,7 +21,7 @@ Instead of developing the application, this project focuses on requirement analy
 
 ---
 
-## 🏭 Business Scenario
+##  Business Scenario
 
 A manufacturing company produces products in multiple production batches every day. Most operational activities are recorded manually using paper registers and Excel sheets.
 
@@ -31,7 +31,7 @@ This case study proposes a centralized web-based system that helps manage produc
 
 ---
 
-## ❗ Problem Statement
+##  Problem Statement
 
 The existing workflow depends heavily on manual processes.
 
@@ -47,7 +47,7 @@ Some common challenges include:
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 - Digitize manufacturing operations
 - Reduce paperwork
@@ -58,7 +58,7 @@ Some common challenges include:
 - Improve decision making using dashboards
 
 ---
-## 🔄 Current Manufacturing Workflow
+## Current Manufacturing Workflow
 
 The following diagram represents a typical manufacturing workflow observed in small and medium-scale manufacturing industries.
 
@@ -102,7 +102,7 @@ The software is divided into multiple independent modules, making it scalable an
 
 ---
 
-## 📦 Proposed Modules
+## Proposed Modules
 
 ### 📊 Dashboard
 
@@ -119,7 +119,7 @@ Features:
 
 ---
 
-### 🏭 Production Management
+###  Production Management
 
 Responsible for handling daily production activities.
 
@@ -134,7 +134,7 @@ Features:
 
 ---
 
-### 📦 Inventory Management
+### Inventory Management
 
 Maintains stock details for raw materials and finished products.
 
@@ -162,7 +162,7 @@ Features:
 
 ---
 
-### 👨‍💼 Employee Management
+### Employee Management
 
 Stores employee information and manages attendance.
 
@@ -175,7 +175,7 @@ Features:
 
 ---
 
-### 📑 Reports
+### Reports
 
 Generates business reports automatically.
 
@@ -189,7 +189,7 @@ Reports include:
 
 ---
 
-## 👥 Stakeholders
+##  Stakeholders
 
 The following users interact with the proposed system.
 
@@ -205,7 +205,7 @@ The following users interact with the proposed system.
 
 ---
 
-## ✅ Expected Benefits
+## Expected Benefits
 
 - Centralized business data
 - Reduced paperwork
@@ -262,7 +262,7 @@ end
 
 ---
 
-# 👤 Use Case Diagram
+#  Use Case Diagram
 
 The following diagram shows how different users interact with the system.
 
@@ -295,7 +295,7 @@ System --> UC6(Generate Reports)
 
 ---
 
-# 🗄️ Entity Relationship Diagram
+#  Entity Relationship Diagram
 
 ```mermaid
 erDiagram
@@ -351,7 +351,7 @@ INVENTORY ||--o{ PRODUCTION : supplies
 
 ---
 
-# 🔄 Activity Diagram
+#  Activity Diagram
 
 ```mermaid
 flowchart TD
@@ -389,7 +389,7 @@ Logout --> End([End])
 
 ---
 
-# 🚀 Deployment Diagram
+#  Deployment Diagram
 
 ```mermaid
 flowchart TD
@@ -415,14 +415,14 @@ Backend --> Database
 
 ---
 
-## 📌 Design Approach
+##  Design Approach
 
 The proposed solution follows a modular architecture where each business function is implemented independently. This makes the application easier to maintain, extend, and test. Communication between the frontend and backend takes place through REST APIs, while all business data is stored in a centralized relational database.
 
 The design allows future enhancements such as mobile applications, barcode integration, IoT-enabled machine monitoring, and predictive maintenance without major architectural changes.
 ---
 
-# 📂 Repository Structure
+#  Repository Structure
 
 ```
 Manufacturing-Management-System
@@ -458,7 +458,7 @@ Manufacturing-Management-System
 
 ---
 
-# 📌 Functional Requirements
+#  Functional Requirements
 
 The proposed system should provide the following features:
 
@@ -488,7 +488,7 @@ The proposed system should provide the following features:
 
 ---
 
-# 🗄️ Proposed Database Tables
+#  Proposed Database Tables
 
 | Table | Purpose |
 |--------|---------|
@@ -504,7 +504,7 @@ The proposed system should provide the following features:
 
 ---
 
-# 🔌 Proposed REST APIs
+#  Proposed REST APIs
 
 | Method | Endpoint | Description |
 |---------|----------|-------------|
@@ -520,7 +520,7 @@ The proposed system should provide the following features:
 
 ---
 
-# 📱 Future Enhancements
+#  Future Enhancements
 
 Some possible improvements include:
 
@@ -535,7 +535,7 @@ Some possible improvements include:
 
 ---
 
-# 📚 Key Learning Outcomes
+#  Key Learning Outcomes
 
 Through this case study I explored how software engineering concepts can be applied to solve real business problems in the manufacturing industry.
 
@@ -552,7 +552,7 @@ The project helped me understand:
 
 ---
 
-# 📌 Disclaimer
+# Disclaimer
 
 This repository is a software engineering case study created for learning and portfolio purposes.
 
