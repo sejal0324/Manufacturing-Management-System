@@ -420,3 +420,154 @@ Backend --> Database
 The proposed solution follows a modular architecture where each business function is implemented independently. This makes the application easier to maintain, extend, and test. Communication between the frontend and backend takes place through REST APIs, while all business data is stored in a centralized relational database.
 
 The design allows future enhancements such as mobile applications, barcode integration, IoT-enabled machine monitoring, and predictive maintenance without major architectural changes.
+---
+
+# 📂 Repository Structure
+
+```
+Manufacturing-Management-System
+│
+├── README.md
+│
+├── diagrams
+│   ├── system-architecture.png
+│   ├── business-workflow.png
+│   ├── use-case-diagram.png
+│   ├── er-diagram.png
+│   ├── activity-diagram.png
+│   └── deployment-diagram.png
+│
+├── database
+│   ├── schema.sql
+│   └── sample-data.sql
+│
+├── docs
+│   ├── Business_Case_Study.pdf
+│   ├── SRS.pdf
+│   ├── API_Documentation.pdf
+│   └── Future_Enhancements.md
+│
+└── wireframes
+    ├── login.png
+    ├── dashboard.png
+    ├── production.png
+    ├── inventory.png
+    ├── maintenance.png
+    └── reports.png
+```
+
+---
+
+# 📌 Functional Requirements
+
+The proposed system should provide the following features:
+
+- User Authentication
+- Role Based Access Control
+- Production Management
+- Inventory Management
+- Employee Management
+- Machine Maintenance
+- Report Generation
+- Dashboard Analytics
+- Search & Filter Records
+- Notification System
+
+---
+
+# ⚙️ Non-Functional Requirements
+
+| Requirement | Description |
+|-------------|-------------|
+| Performance | Fast response time for daily operations |
+| Availability | Accessible during production hours |
+| Security | Secure login and role-based permissions |
+| Scalability | Easy to add new modules in future |
+| Reliability | Accurate storage of production records |
+| Maintainability | Modular software architecture |
+
+---
+
+# 🗄️ Proposed Database Tables
+
+| Table | Purpose |
+|--------|---------|
+| Users | Login credentials |
+| Employees | Employee details |
+| Machines | Machine information |
+| Production | Production batches |
+| Inventory | Stock management |
+| Suppliers | Supplier records |
+| Maintenance | Machine service history |
+| Attendance | Employee attendance |
+| Reports | Generated reports |
+
+---
+
+# 🔌 Proposed REST APIs
+
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| POST | /login | User Login |
+| GET | /dashboard | Dashboard Summary |
+| GET | /production | View Production |
+| POST | /production | Create Production Batch |
+| PUT | /production/{id} | Update Production |
+| GET | /inventory | View Inventory |
+| POST | /maintenance | Report Machine Issue |
+| GET | /employees | Employee List |
+| GET | /reports | Generate Reports |
+
+---
+
+# 📱 Future Enhancements
+
+Some possible improvements include:
+
+- Barcode & QR Code Integration
+- IoT-enabled Machine Monitoring
+- Predictive Maintenance
+- Mobile Application
+- Email Notifications
+- Cloud Deployment
+- AI-based Production Forecasting
+- Real-time Production Dashboard
+
+---
+
+# 📚 Key Learning Outcomes
+
+Through this case study I explored how software engineering concepts can be applied to solve real business problems in the manufacturing industry.
+
+The project helped me understand:
+
+- Business Requirement Analysis
+- Software Requirement Specification (SRS)
+- Database Design
+- System Architecture
+- Software Modularization
+- REST API Planning
+- Business Workflow Analysis
+- Manufacturing Operations
+
+---
+
+# 📌 Disclaimer
+
+This repository is a software engineering case study created for learning and portfolio purposes.
+
+The business workflow presented here is based on common manufacturing practices and publicly available software engineering concepts. Company-specific information has not been used.
+
+---
+
+## 👨‍💻 Author
+
+**Sejal**
+
+Electronics & Telecommunication Engineering Student
+
+Interested in Software Engineering, Manufacturing Systems, Full Stack Development, and Industrial Digitalization.
+
+---
+
+⭐ *If you found this project interesting, feel free to explore the diagrams and documentation included in this repository.*
