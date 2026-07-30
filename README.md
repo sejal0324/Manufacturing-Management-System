@@ -214,3 +214,209 @@ The following users interact with the proposed system.
 - Improved maintenance planning
 - Better communication between departments
 - Increased operational efficiency
+  # 🏗️ System Design
+
+## Software Architecture
+
+The proposed system follows a **3-tier architecture**, where the presentation layer communicates with the backend through REST APIs, and the backend manages all business logic and database operations.
+
+```mermaid
+flowchart TD
+
+U[Users]
+
+subgraph Client Layer
+U
+end
+
+U --> A
+
+subgraph Presentation Layer
+A[React Web Application]
+end
+
+A -->|REST APIs| B
+
+subgraph Business Layer
+B[Java Spring Boot]
+
+B --> S1[Authentication Service]
+B --> S2[Production Service]
+B --> S3[Inventory Service]
+B --> S4[Maintenance Service]
+B --> S5[Employee Service]
+B --> S6[Reporting Service]
+end
+
+S1 --> DB
+S2 --> DB
+S3 --> DB
+S4 --> DB
+S5 --> DB
+S6 --> DB
+
+subgraph Database Layer
+DB[(MySQL Database)]
+end
+```
+
+---
+
+# 👤 Use Case Diagram
+
+The following diagram shows how different users interact with the system.
+
+```mermaid
+flowchart LR
+
+Manager((Plant Manager))
+Supervisor((Supervisor))
+Operator((Operator))
+Store((Store Manager))
+HR((HR))
+Maintenance((Maintenance Engineer))
+
+System[Manufacturing Management System]
+
+Manager --> System
+Supervisor --> System
+Operator --> System
+Store --> System
+HR --> System
+Maintenance --> System
+
+System --> UC1(View Dashboard)
+System --> UC2(Manage Production)
+System --> UC3(Manage Inventory)
+System --> UC4(Update Attendance)
+System --> UC5(Schedule Maintenance)
+System --> UC6(Generate Reports)
+```
+
+---
+
+# 🗄️ Entity Relationship Diagram
+
+```mermaid
+erDiagram
+
+EMPLOYEE {
+int employee_id
+string name
+string department
+string role
+}
+
+MACHINE {
+int machine_id
+string machine_name
+string status
+}
+
+PRODUCTION {
+int batch_id
+date production_date
+int quantity
+string status
+}
+
+INVENTORY {
+int item_id
+string item_name
+int quantity
+}
+
+MAINTENANCE {
+int maintenance_id
+date maintenance_date
+string issue
+}
+
+REPORT {
+int report_id
+date generated_on
+string report_type
+}
+
+EMPLOYEE ||--o{ PRODUCTION : manages
+
+MACHINE ||--o{ PRODUCTION : used_in
+
+MACHINE ||--o{ MAINTENANCE : requires
+
+PRODUCTION ||--o{ REPORT : generates
+
+INVENTORY ||--o{ PRODUCTION : supplies
+```
+
+---
+
+# 🔄 Activity Diagram
+
+```mermaid
+flowchart TD
+
+Start([Start])
+
+Start --> Login
+
+Login --> Dashboard
+
+Dashboard --> Choice{Select Module}
+
+Choice --> Production
+
+Choice --> Inventory
+
+Choice --> Maintenance
+
+Choice --> Reports
+
+Production --> Save
+
+Inventory --> Save
+
+Maintenance --> Save
+
+Reports --> View
+
+Save --> Logout
+
+View --> Logout
+
+Logout --> End([End])
+```
+
+---
+
+# 🚀 Deployment Diagram
+
+```mermaid
+flowchart TD
+
+User[User Browser]
+
+Internet((Internet))
+
+Frontend[React Application]
+
+Backend[Spring Boot Server]
+
+Database[(MySQL)]
+
+User --> Internet
+
+Internet --> Frontend
+
+Frontend --> Backend
+
+Backend --> Database
+```
+
+---
+
+## 📌 Design Approach
+
+The proposed solution follows a modular architecture where each business function is implemented independently. This makes the application easier to maintain, extend, and test. Communication between the frontend and backend takes place through REST APIs, while all business data is stored in a centralized relational database.
+
+The design allows future enhancements such as mobile applications, barcode integration, IoT-enabled machine monitoring, and predictive maintenance without major architectural changes.
