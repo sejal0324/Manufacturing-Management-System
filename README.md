@@ -214,7 +214,7 @@ The following users interact with the proposed system.
 - Improved maintenance planning
 - Better communication between departments
 - Increased operational efficiency
-  # 🏗️ System Design
+  #  System Design
 
 ## Software Architecture
 
